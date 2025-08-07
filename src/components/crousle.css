@@ -59,6 +59,7 @@
 .panel.active {
   flex: 5;
 }
+
 @media screen and (max-width: 768px) {
   .container {
     height: auto;
@@ -74,13 +75,17 @@
   }
 
   .carousel-wrapper {
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
   }
 
   .panel {
-    flex: 1 !important;
+    min-width: 80%;
     height: 250px;
+    scroll-snap-align: start;
+    flex: 0 0 auto !important;
   }
 
   .panel h3 {
