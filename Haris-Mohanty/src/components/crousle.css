@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.crousel-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.crousel-text h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.crousel-text p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Carousel Wrapper */
+.carousel-wrapper {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+
+/* Panels */
+.panel {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  flex: 0.5;
+  position: relative;
+  cursor: pointer;
+  transition: flex 0.5s ease-in;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.panel h3 {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+
+.panel.active {
+  flex: 5;
+}
