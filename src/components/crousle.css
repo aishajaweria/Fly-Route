@@ -59,3 +59,32 @@
 .panel.active {
   flex: 5;
 }
+@media screen and (max-width: 768px) {
+  .container {
+    height: auto;
+    padding: 15px;
+  }
+
+  .crousel-text h2 {
+    font-size: 1.1rem;
+  }
+
+  .crousel-text p {
+    font-size: 1rem;
+  }
+
+  .carousel-wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .panel {
+    flex: 1 !important;
+    height: 250px;
+  }
+
+  .panel h3 {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
